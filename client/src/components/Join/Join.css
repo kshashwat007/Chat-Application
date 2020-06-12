@@ -1,0 +1,133 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #root {
+    height: 100vh;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    text-align: center;
+    width: 65%;
+    height: 250px;
+    margin: auto;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    /* bottom: 0; */
+    user-select: none;
+  }
+  
+  .logo b{
+    font: 400 19vh "Vibur";
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+  }
+  .logo b span{
+    animation: blink linear infinite 2s;
+  }
+  .logo b span:nth-of-type(2){
+    animation: blink linear infinite 3s;
+  }
+  @keyframes blink {
+    78% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    79%{
+       color: #333;
+    }
+    80% {
+      
+      text-shadow: none;
+    }
+    81% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    82% {
+      color: #333;
+      text-shadow: none;
+    }
+    83% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    92% {
+      color: #333;
+      text-shadow: none;
+    }
+    92.5% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+  }
+
+  .joinOuterContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    /* background-color: #1A1A1D; */
+    background: #112 url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg)  center no-repeat;
+    background-size:cover;
+    margin:0
+  }
+
+  .joinInnerContainer {
+    width: 20%;
+  }
+  
+  .joinInput {
+    border-radius: 0;
+    padding: 15px 20px;
+    width: 100%;
+  }
+  
+  .heading {
+    color: white;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+  }
+  
+  .button {
+      color: #fff !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: #e06868;
+      padding: 20px;
+      font-size: 20px;
+      border-radius: 5px;
+      display: inline-block;
+      border: none;
+      width: 100%;
+  }
+  
+  .mt-20 {
+    margin-top: 20px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .joinOuterContainer {
+      height: 100%;
+    }
+  
+    .joinInnerContainer {
+      width: 90%;
+    }
+  
+  
+  }
+  
+  button:focus {
+    outline: 0;
+  }

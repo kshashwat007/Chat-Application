@@ -9,7 +9,7 @@ const Join = () => {
     return(
         <div className='joinOuterContainer'>          
             <div className='joinInnerContainer'>
-            <div class="logo"><b>C<span>ha</span>t<span>Up</span>!</b></div>          
+            <div className="logo"><b>C<span>ha</span>t<span>Up</span>!</b></div>          
                 <h1 className="heading">Join Below!</h1>          
                 <div><input placeholder="Name.." className='joinInput' type='text' onChange={(event) => setName(event.target.value)} /></div>
                 <div>

@@ -22,13 +22,14 @@ const Chat = ({location}) => {
            
         });
 
+        console.log(socket);
+
         return () => {
             socket.emit('disconnect')
 
             socket.off();
         }
 
-        console.log(socket);
     }, [ENDPOINT, location.search])
     
     return(

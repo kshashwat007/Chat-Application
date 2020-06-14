@@ -14,7 +14,7 @@ const Join = () => {
                 <div><input placeholder="Name.." className='joinInput' type='text' onChange={(event) => setName(event.target.value)} /></div>
                 <div>
                     <select name="room" className='joinInput mt-20' type='text' onChange={(event) => setRoom(event.target.value)}>
-                        <option value="none" selected disabled hidden>Select a room to join!</option>
+                        {/* <option value="none" disabled hidden>Select a room to join!</option> */}
 						<option value="Overwatch">Overwatch</option>
 						<option value="CSGO">CSGO</option>
 						<option value="COD">COD</option>
